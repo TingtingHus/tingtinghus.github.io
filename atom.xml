@@ -41,26 +41,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/2021/01/18/%E8%AF%BB%E4%B9%A6%E7%9F%AD%E8%AF%84%EF%BC%9A%E7%AC%A8%E5%8A%9E%E6%B3%95%E5%AD%A6python%203/"/>
-    <id>http://example.com/2021/01/18/%E8%AF%BB%E4%B9%A6%E7%9F%AD%E8%AF%84%EF%BC%9A%E7%AC%A8%E5%8A%9E%E6%B3%95%E5%AD%A6python%203/</id>
-    <published>2021-01-18T09:21:15.608Z</published>
-    <updated>2021-01-18T09:57:22.118Z</updated>
-    
-    <content type="html"><![CDATA[<p>评价：前46节都非常基础，适合刚开始接触python的初学者，而从第46节开始后，难度突然加大，仿佛一下子从小学画本变成大学教程，建议初学者对后面几个习题不必深究，甚至可以直接跳过。前四分之三作者还是很好的传达了学习Python的一些思想和方法，比如不建议使用IDE，自顶向下和自底向上的编程方法等等。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;评价：前46节都非常基础，适合刚开始接触python的初学者，而从第46节开始后，难度突然加大，仿佛一下子从小学画本变成大学教程，建议初学者对后面几个习题不必深究，甚至可以直接跳过。前四分之三作者还是很好的传达了学习Python的一些思想和方法，比如不建议使用IDE，自顶向</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>豆瓣小组社区流量数据分析</title>
     <link href="http://example.com/2021/01/06/%E3%80%90%E5%AE%9E%E6%88%98%E3%80%91%E8%B1%86%E7%93%A3%E5%B0%8F%E7%BB%84%E7%A4%BE%E5%8C%BA%E6%B5%81%E9%87%8F%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     <id>http://example.com/2021/01/06/%E3%80%90%E5%AE%9E%E6%88%98%E3%80%91%E8%B1%86%E7%93%A3%E5%B0%8F%E7%BB%84%E7%A4%BE%E5%8C%BA%E6%B5%81%E9%87%8F%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</id>
@@ -279,6 +259,30 @@
     
     
     <category term="统计学" scheme="http://example.com/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>笨办法学python3</title>
+    <link href="http://example.com/2020/06/07/%E8%AF%BB%E4%B9%A6%E7%9F%AD%E8%AF%84%EF%BC%9A%E7%AC%A8%E5%8A%9E%E6%B3%95%E5%AD%A6python%203/"/>
+    <id>http://example.com/2020/06/07/%E8%AF%BB%E4%B9%A6%E7%9F%AD%E8%AF%84%EF%BC%9A%E7%AC%A8%E5%8A%9E%E6%B3%95%E5%AD%A6python%203/</id>
+    <published>2020-06-07T12:00:00.000Z</published>
+    <updated>2021-01-18T10:03:35.166Z</updated>
+    
+    <content type="html"><![CDATA[<p>评价：前46节都非常基础，适合刚开始接触python的初学者，而从第46节开始后，难度突然加大，仿佛一下子从小学画本变成大学教程，建议初学者对后面几个习题不必深究，甚至可以直接跳过。前四分之三作者还是很好的传达了学习Python的一些思想和方法，比如不建议使用IDE，自顶向下和自底向上的编程方法等等。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;评价：前46节都非常基础，适合刚开始接触python的初学者，而从第46节开始后，难度突然加大，仿佛一下子从小学画本变成大学教程，建议初学者对后面几个习题不必深究，甚至可以直接跳过。前四分之三作者还是很好的传达了学习Python的一些思想和方法，比如不建议使用IDE，自顶向</summary>
+      
+    
+    
+    
+    <category term="读书笔记" scheme="http://example.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Python" scheme="http://example.com/tags/Python/"/>
     
   </entry>
   
