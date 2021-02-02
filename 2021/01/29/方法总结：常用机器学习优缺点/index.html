@@ -33,7 +33,7 @@
 <td align="center">有</td>
 <td align="center">是</td>
 <td align="center">不支持</td>
-<td align="center">梯度下降法、直接解方程</td>
+<td align="center">梯度下降法、正规方程解（解析解）</td>
 <td align="center">低</td>
 <td align="center">容易</td>
 <td align="center">敏感</td>
@@ -153,7 +153,7 @@
 <h1 id="逻辑回归"><a href="#逻辑回归" class="headerlink" title="逻辑回归"></a>逻辑回归</h1><p>逻辑回归属于判别式模型，同时伴有很多模型正则化的方法（L0， L1，L2，etc），而且你不必像在用朴素贝叶斯那样担心你的特征是否相关，与决策树、SVM相比，你还会得到一个不错的概率解释，你甚至可以轻松地利用新数据来更新模型（使用在线梯度下降算法-online gradient descent）。如果你需要一个概率架构（比如，简单地调节分类阈值，指明不确定性，或者是要获得置信区间），或者你希望以后将更多的训练数据快速整合到模型中去，可以使用逻辑回归。</p>
 <h2 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h2><p>实现简单，广泛的应用于工业问题上；<br>分类时计算量非常小，速度很快，存储资源低；<br>便利的观测样本概率分数；<br>对逻辑回归而言，多重共线性并不是问题，它可以结合L2正则化来解决该问题；<br>计算代价不高，易于理解和实现；</p>
 <h2 id="缺点：-1"><a href="#缺点：-1" class="headerlink" title="缺点："></a>缺点：</h2><p>当特征空间很大时，逻辑回归的性能不是很好；<br>容易欠拟合，一般准确度不太高<br>不能很好地处理大量多类特征或变量；<br>只能处理两分类问题（在此基础上衍生出来的softmax可以用于多分类），且必须线性可分；<br>对于非线性特征，需要进行转换；</p>
-<h2 id="logistic回归应用领域："><a href="#logistic回归应用领域：" class="headerlink" title="logistic回归应用领域："></a>logistic回归应用领域：</h2><p>用于二分类领域，可以得出概率值，适用于根据分类概率排名的领域，如搜索排名等<br>Logistic回归的扩展softmax可以应用于多分类领域，如手写字识别等<br>信用评估<br>测量市场营销的成功度<br>预测某个产品的收益</p>
+<h2 id="logistic回归应用领域："><a href="#logistic回归应用领域：" class="headerlink" title="logistic回归应用领域："></a>logistic回归应用领域：</h2><p>用于二分类领域，可以得出概率值，适用于根据分类概率排名的领域，如搜索排名等<br>Logistic回归的扩展softmax可以应用于多分类领域，如手写字识别等<br>信用评估，是否违约<br>是否为垃圾邮件<br>测量市场营销的成功度<br>预测某个产品的收益</p>
 <h1 id="KNN"><a href="#KNN" class="headerlink" title="KNN"></a>KNN</h1><p>KNN即最近邻算法，其主要过程为：</p>
 <ol>
 <li>计算训练样本和测试样本中每个样本点的距离（常见的距离度量有欧式距离，马氏距离等）；</li>
