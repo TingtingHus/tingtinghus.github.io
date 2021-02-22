@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-22T10:23:29.904Z</updated>
+  <updated>2021-02-22T10:25:40.478Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>AB testing</title>
+    <title>AB-testing</title>
     <link href="http://example.com/2021/02/22/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%EF%BC%9AB%20testing%20%E6%A6%82%E8%AE%BA/"/>
     <id>http://example.com/2021/02/22/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%EF%BC%9AB%20testing%20%E6%A6%82%E8%AE%BA/</id>
     <published>2021-02-22T07:28:00.000Z</published>
-    <updated>2021-02-22T10:23:29.904Z</updated>
+    <updated>2021-02-22T10:25:40.478Z</updated>
     
     <content type="html"><![CDATA[<p><strong><em>本文是极客时间平台课程《A/B测试从0到1》的学习笔记。</em></strong></p>]]></content>
     
