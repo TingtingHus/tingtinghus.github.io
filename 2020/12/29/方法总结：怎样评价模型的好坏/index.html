@@ -42,7 +42,7 @@
 <p><img src="https://raw.githubusercontent.com/TingtingHus/PicBed/main/pics/1611742935175.jpg" alt="PR曲线.jpg"></p>
 <p>举例: 在判断肿瘤是否为良性的诊断中, 我们可能会选择Recall高的模型, 即使会牺牲掉Precision. 宁愿100个里面判断20个为恶性(其中只有10个是正确的), 也不要判断为恶性有7个, 漏了两个.<br>所以面临如何选择的时候, 我们引入ROC曲线.</p>
 <h3 id="ROC曲线"><a href="#ROC曲线" class="headerlink" title="ROC曲线"></a>ROC曲线</h3><p>横坐标是false positive rate(FPR)，纵坐标是true positive rate(TPR)。ROC的全名叫做Receiver Operating Characteristic，主要通过平面坐标系上的曲线来衡量分类模型结果好坏——ROC curve</p>
-<p>纵坐标TPR是<strong>真正率</strong>，即是上述的指标召回率，TPR = TP/(TP + FN)<br>横坐标FPR是<strong>假正率</strong>，指代负样本中的错判率，FPR = FP/(FP + TN)</p>
+<p>纵坐标TPR是真正率，即是上述的指标<strong>召回率</strong>，TPR = TP/(TP + FN)<br>横坐标FPR是假正率，指代负样本中的<strong>错判率</strong>，FPR = FP/(FP + TN)</p>
 <p>典型的ROC曲线是一个位于坐标点（0,0）和（1,1)对角线上方的曲线，因为对角线代表着随机分类器的分类效果。</p>
 <p><img src="https://raw.githubusercontent.com/TingtingHus/PicBed/main/pics/ROC.jpg" alt="ROC曲线.jpg"></p>
 <p>ROC曲线和P-R曲线有些类似，ROC曲线越靠近左上角性能越好。左上角坐标为(0, 1)，即FPR=0，TPR=1，根据FPR和TPR公可以得知，此时FN=0， FP=0，模型对所有样本分类正确，绘制ROC曲线很简单，首先对所有样本按预测概率排序，以每条样本的预测概率为阈值，计算相应的FPR和TPR，然后线段连接。</p>
