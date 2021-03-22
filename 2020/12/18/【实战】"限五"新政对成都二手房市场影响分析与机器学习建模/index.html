@@ -278,7 +278,7 @@
 </blockquote>
 <h2 id="B-二手房价格影响因素-1"><a href="#B-二手房价格影响因素-1" class="headerlink" title="B.二手房价格影响因素"></a>B.二手房价格影响因素</h2><p>根据线性回归结果，</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avgPrice = 5.82*area+913.22*class-0.63*period-70.25*changeTime+1.94*introduce-310.87*buildDiff+3886.94*tenantIdGaoxin-5141.21*tenantIdGaoxinxi+4696.53*tenantIdJinjiang-1214.46*tenantIdJinniu+3651.31*tenantIdQingyang-134.72*tenantIdTianfuxinqu+592.20*tenantIdWuhou +4743.10*typeZhuzhai+1381.77*zhuangxiuJingzhuang+167.11*zhuangxiuMaopi+930.46*zhuangxiuOther+11991.34</span><br></pre></td></tr></tbody></table></figure>
-<p>然而，模型的回归R-squared仅有0.457，说明模型的解释效果并不好，缺失重要的自变量。</p>
+<p>然而，模型的回归R-squared仅有0.457，说明模型的解释效果并不好，可能缺失重要的自变量。</p>
 <h2 id="C-政策对房价的影响-1"><a href="#C-政策对房价的影响-1" class="headerlink" title="C.政策对房价的影响"></a>C.政策对房价的影响</h2><p>增加政策发生时间分类变量tag=1表示914后，为0表示914前，回归结果如下，</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avgPrice = 95.20*tag_1+5.80*area+914.51*class-0.62*period-70.54*changeTime+1.94*introduce-311.20*buildDiff+3895.52*tenantIdGaoxin-5110.73*tenantIdGaoxinxi+4709.82*tenantIdJinjiang-1204.03*tenantIdJinniu+3653.54*tenantIdQingyang-119.33*tenantIdTianfuxinqu+601.58*tenantIdWuhou+4747.34*typeZhuzhai+1382.24*zhuangxiuJingzhuang+169.98*zhuangxiuMaopi+936.04*zhuangxiuOther+11954.10</span><br></pre></td></tr></tbody></table></figure>
 <blockquote>
@@ -301,19 +301,19 @@
 <td align="center">0.717</td>
 </tr>
 <tr>
-<td align="center">MSE</td>
+<td align="center">MSE均方误差</td>
 <td align="center">10970641</td>
 <td align="center">18556599</td>
 <td align="center">19285611</td>
 </tr>
 <tr>
-<td align="center">MAE</td>
+<td align="center">MAE平均绝对误差</td>
 <td align="center">2007</td>
 <td align="center">2795</td>
 <td align="center">2790</td>
 </tr>
 <tr>
-<td align="center">RMSE</td>
+<td align="center">RMSE均方根误差</td>
 <td align="center">3312</td>
 <td align="center">4307</td>
 <td align="center">4391</td>
