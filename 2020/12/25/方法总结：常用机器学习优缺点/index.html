@@ -26,6 +26,7 @@
 <th align="center">解释性</th>
 <th align="center">缺失值影响</th>
 <th align="left">无量纲化的影响</th>
+<th align="left">噪声</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -40,6 +41,7 @@
 <td align="center">容易</td>
 <td align="center">敏感</td>
 <td align="left">加快速度</td>
+<td align="left">NA</td>
 </tr>
 <tr>
 <td align="center">2</td>
@@ -53,6 +55,7 @@
 <td align="center">容易</td>
 <td align="center">敏感</td>
 <td align="left">加快速度</td>
+<td align="left">NA</td>
 </tr>
 <tr>
 <td align="center">3</td>
@@ -65,6 +68,7 @@
 <td align="center">中</td>
 <td align="center">容易</td>
 <td align="center">较不敏感</td>
+<td align="left">NA</td>
 <td align="left">NA</td>
 </tr>
 <tr>
@@ -79,6 +83,7 @@
 <td align="center">一般</td>
 <td align="center">一般</td>
 <td align="left">提升精度</td>
+<td align="left">不敏感</td>
 </tr>
 <tr>
 <td align="center">5</td>
@@ -92,6 +97,7 @@
 <td align="center">容易</td>
 <td align="center">一般</td>
 <td align="left">提升精度</td>
+<td align="left">敏感</td>
 </tr>
 <tr>
 <td align="center">6</td>
@@ -105,6 +111,7 @@
 <td align="center">容易</td>
 <td align="center">不敏感</td>
 <td align="left">任何类型的数据</td>
+<td align="left">不敏感</td>
 </tr>
 <tr>
 <td align="center">7</td>
@@ -117,6 +124,7 @@
 <td align="center">低</td>
 <td align="center">容易</td>
 <td align="center">不敏感</td>
+<td align="left">不敏感</td>
 <td align="left"></td>
 </tr>
 <tr>
@@ -131,6 +139,7 @@
 <td align="center">容易</td>
 <td align="center">敏感</td>
 <td align="left">加快速度</td>
+<td align="left">NA</td>
 </tr>
 <tr>
 <td align="center">9</td>
@@ -144,6 +153,7 @@
 <td align="center">困难</td>
 <td align="center">不敏感</td>
 <td align="left">加快速度</td>
+<td align="left">NA</td>
 </tr>
 <tr>
 <td align="center">10</td>
@@ -157,6 +167,7 @@
 <td align="center">容易</td>
 <td align="center">不敏感</td>
 <td align="left">NA</td>
+<td align="left">敏感</td>
 </tr>
 </tbody></table>
 <h1 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h1><p>线性回归是用于回归的，它不像Logistic回归那样用于分类，其基本思想是用梯度下降法对最小二乘法形式的误差函数进行优化，当然也可以用normal equation（解方程）直接求得参数的解。</p>
@@ -177,7 +188,7 @@
 <p>交叉验证（将样本数据按照一定比例，拆分出训练用的数据和验证用的数据，比如6：4拆分出部分训练数据和验证数据），从选取一个较小的K值开始，不断增加K的值，然后计算验证集合的方差，最终找到一个比较合适的K值。（选择K点的时候可以选择一个较大的临界K点，当它继续增大或减小的时候，错误率都会上升。）</p>
 <h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>理论成熟，思想简单，既可以用来做分类也可以用来做回归；<br>可用于非线性分类；<br>训练时间复杂度为O(n)；<br>对数据没有假设，准确度高，对outlier异常值不敏感；<br>KNN是一种在线技术，新数据可以直接加入数据集而不必进行重新训练；<br>KNN理论简单，容易实现；</p>
 <h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>样本不平衡问题（即有些类别的样本数量很多，而其它样本的数量很少）效果差；<br>需要大量内存；<br>对于样本容量大的数据集计算量比较大（体现在距离计算上）；<br>样本不平衡时，预测偏差比较大。如：某一类的样本比较少，而其它类样本比较多；<br>KNN每一次分类都会重新进行一次全局运算；<br>k值大小的选择没有理论选择最优，往往是结合K-折交叉验证得到最优k值选择；</p>
-<h2 id="KNN算法应用领域"><a href="#KNN算法应用领域" class="headerlink" title="KNN算法应用领域"></a>KNN算法应用领域</h2><p>文本分类、模式识别、聚类分析，多分类领域</p>
+<h2 id="KNN算法应用领域"><a href="#KNN算法应用领域" class="headerlink" title="KNN算法应用领域"></a>KNN算法应用领域</h2><p>文本分类、模式识别、聚类分析（推荐系统），多分类领域</p>
 <h1 id="Kmeans"><a href="#Kmeans" class="headerlink" title="Kmeans"></a>Kmeans</h1><p>是一个简单的聚类算法，把n的对象根据他们的属性分为k个分割，k&lt; n。 算法的核心就是要优化失真函数J,使其收敛到局部最小值但不是全局最小值。<br>不能自动识别类的个数(输入参数是k，即k个类),随机找k个点作为初始中心：c1, c2, … ck，初始聚类中心的选择对聚类结果的影响很大</p>
 <h2 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h2><p>算法简单，容易实现 ；<br>算法速度很快；<br>对处理大数据集，该算法是相对可伸缩的和高效率的，因为它的复杂度大约是O(nkt)，其中n是所有对象的数目，k是簇的数目,t是迭代的次数。通常k&lt;&lt;n。这个算法通常局部收敛。<br>算法尝试找出使平方误差函数值最小的k个划分。当簇是密集的、球状或团状的，且簇与簇之间区别明显时，聚类效果较好。</p>
 <h2 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h2><p>对数据类型要求较高，适合数值型数据；<br>可能收敛到局部最小值，在大规模数据上收敛较慢<br>分组的数目k是一个输入参数，不合适的k可能返回较差的结果。<br>对初值的簇心值敏感，对于不同的初始值，可能会导致不同的聚类结果；<br>不适合于发现非凸面形状的簇，或者大小差别很大的簇。<br>对于”噪声”和孤立点数据敏感，少量的该类数据能够对平均值产生极大影响。</p>
